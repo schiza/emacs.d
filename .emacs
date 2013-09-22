@@ -31,6 +31,7 @@
 (require 'my-ack)
 (require 'my-deft)
 (require 'my-direx)
+(require 'my-autopair)
 
 ;; Start Emacs server automatically
 (server-start)

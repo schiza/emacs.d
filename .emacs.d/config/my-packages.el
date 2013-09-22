@@ -24,6 +24,7 @@
 			  deft
 			  color-theme
 			  direx
+			  autopair
                           yaml-mode)
   "Default packages")
 
