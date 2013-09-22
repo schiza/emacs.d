@@ -25,4 +25,6 @@
       (push "--literal" arguments))
     arguments))
 
+(global-set-key (kbd "C-c f") 'ack)
+
 (provide 'my-ack)
