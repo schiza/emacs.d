@@ -30,6 +30,7 @@
 (require 'my-ruby)
 (require 'my-ack)
 (require 'my-deft)
+(require 'my-direx)
 
 ;; Start Emacs server automatically
 (server-start)

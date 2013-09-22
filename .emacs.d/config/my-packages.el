@@ -23,6 +23,7 @@
 			  ack-and-a-half
 			  deft
 			  color-theme
+			  direx
                           yaml-mode)
   "Default packages")
 
