@@ -196,4 +196,9 @@
 (global-set-key [\M-up] 'move-text-up)
 (global-set-key [\M-down] 'move-text-down)
 
+;; Automatically highlight symbol on point
+(require 'highlight-symbol)
+(setq hihlight-symbol-idle-delay 0.5)
+(add-hook 'prog-mode-hook (lambda () (highlight-symbol-mode)))
+
 (provide 'my-global)

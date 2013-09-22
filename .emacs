@@ -28,3 +28,14 @@
 (require 'my-coffee)
 (require 'my-yaml)
 (require 'my-ruby)
+(require 'my-ack)
+(require 'my-deft)
+
+;; Start Emacs server automatically
+(server-start)
+
+;; Split window and open Deft buffer in it
+(split-window-horizontally)
+(windmove-right)
+(deft)
+(windmove-left)

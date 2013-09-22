@@ -19,6 +19,9 @@
 			  shell-pop
 			  ruby-electric
 			  ruby-block
+			  highlight-symbol
+			  ack-and-a-half
+			  deft
                           yaml-mode)
   "Default packages")
 
