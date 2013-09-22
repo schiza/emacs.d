@@ -19,19 +19,23 @@
     (add-to-list 'load-path project)))
 
 ;; Easier way to manage specific configurations
-(require 'my-packages)
-(require 'my-global)
-(require 'my-theme)
-(require 'my-ido-smex)
-(require 'my-recentf)
-(require 'my-term)
-(require 'my-coffee)
-(require 'my-yaml)
-(require 'my-ruby)
-(require 'my-ack)
-(require 'my-deft)
-(require 'my-direx)
-(require 'my-autopair)
+(defvar schiza/configs '(my-packages
+			 my-global
+			 my-theme
+			 my-ido-smex
+			 my-recentf
+			 my-term
+			 my-coffee
+			 my-yaml
+			 my-ruby
+			 my-ack
+			 my-deft
+			 my-direx
+			 my-autopair
+			 my-projectile))
+
+(dolist (config schiza/configs)
+  (require config))
 
 ;; Start Emacs server automatically
 (server-start)

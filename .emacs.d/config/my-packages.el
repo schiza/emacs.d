@@ -25,6 +25,8 @@
 			  color-theme
 			  direx
 			  autopair
+			  projectile
+			  flx-ido
                           yaml-mode)
   "Default packages")
 
