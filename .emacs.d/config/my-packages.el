@@ -27,6 +27,7 @@
 			  autopair
 			  projectile
 			  flx-ido
+			  flycheck
                           yaml-mode)
   "Default packages")
 

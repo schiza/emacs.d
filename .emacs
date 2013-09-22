@@ -32,7 +32,8 @@
 			 my-deft
 			 my-direx
 			 my-autopair
-			 my-projectile))
+			 my-projectile
+			 my-flycheck))
 
 (dolist (config schiza/configs)
   (require config))
