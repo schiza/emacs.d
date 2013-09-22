@@ -22,6 +22,7 @@
 			  highlight-symbol
 			  ack-and-a-half
 			  deft
+			  color-theme
                           yaml-mode)
   "Default packages")
 
