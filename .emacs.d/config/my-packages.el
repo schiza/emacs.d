@@ -27,7 +27,6 @@
 			  deft
 			  color-theme
 			  direx
-			  autopair
 			  projectile
 			  flx-ido
 			  flycheck

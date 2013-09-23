@@ -32,7 +32,6 @@
 			 my-ack
 			 my-deft
 			 my-direx
-			 my-autopair
 			 my-projectile
 			 my-flycheck))
 
