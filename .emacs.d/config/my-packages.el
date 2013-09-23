@@ -8,6 +8,8 @@
 
 ;; Default packages list
 (defvar schiza/packages '(coffee-mode
+			  handlebars-mode
+			  sass-mode
                           go-mode
                           marmalade
                           org
