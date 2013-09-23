@@ -201,4 +201,7 @@
 (setq hihlight-symbol-idle-delay 0.5)
 (add-hook 'prog-mode-hook (lambda () (highlight-symbol-mode)))
 
+;; Use buffer-menu instead of list-buffers for  C-x C-b
+(global-set-key (kbd "C-x C-b") 'buffer-menu)
+
 (provide 'my-global)
