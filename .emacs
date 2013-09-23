@@ -28,6 +28,7 @@
 			 my-coffee
 			 my-yaml
 			 my-ruby
+			 my-exec-path-from-shell
 			 my-ack
 			 my-deft
 			 my-direx

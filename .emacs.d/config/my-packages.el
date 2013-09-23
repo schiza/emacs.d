@@ -22,6 +22,7 @@
 			  ruby-electric
 			  ruby-block
 			  highlight-symbol
+			  exec-path-from-shell
 			  ack-and-a-half
 			  deft
 			  color-theme
