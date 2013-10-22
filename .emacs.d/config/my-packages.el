@@ -8,7 +8,6 @@
 
 ;; Default packages list
 (defvar schiza/packages '(coffee-mode
-			  handlebars-mode
 			  sass-mode
                           go-mode
                           marmalade
@@ -44,5 +43,12 @@
   (dolist (pkg schiza/packages)
     (when (not (package-installed-p pkg))
       (package-install pkg))))
+
+;; Require packages that needs that and doesn't have separate config
+(defvar schiza/manual-require-packages '(handlebars-mode)
+  "Packages requiring manual require")
+
+(dolist (pkg schiza/manual-require-packages)
+      (require pkg))
 
 (provide 'my-packages)
