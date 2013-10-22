@@ -1,5 +1,4 @@
 (require 'ruby-mode)
-(require 'ruby-electric)
 (require 'ruby-block)
 
 (setq ruby-insert-encoding-magic-comment t)
@@ -8,7 +7,6 @@
 	  (lambda ()
 	    (ruby-block-mode t)
 	    (setq ruby-block-highlight-toggle t)
-	    (autopair-mode)
 	    )
 	  )
 
@@ -22,9 +20,5 @@
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
 
-;; electric in ruby-mode
-(add-hook 'ruby-mode-hook '(lambda ()
-			     (require 'ruby-electric)
-			     (ruby-electric-mode t)))
 
 (provide 'my-ruby)

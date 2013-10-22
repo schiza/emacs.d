@@ -19,7 +19,6 @@
 			  handlebars-mode
 			  rainbow-delimiters
 			  shell-pop
-			  ruby-electric
 			  ruby-block
 			  highlight-symbol
 			  exec-path-from-shell
