@@ -204,4 +204,13 @@
 ;; Use buffer-menu instead of list-buffers for  C-x C-b
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
+(defun kill-other-buffers ()
+  "Kill all buffers but the current one.
+Don't mess with special buffers."
+  (interactive)
+  (dolist (buffer (buffer-list))
+    (unless (or (eql buffer (current-buffer)) (not (buffer-file-name buffer)))
+      (kill-buffer buffer))))
+(global-set-key (kbd "C-c k") 'kill-other-buffers)
+
 (provide 'my-global)
