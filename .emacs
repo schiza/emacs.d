@@ -29,7 +29,7 @@
 			 my-yaml
 			 my-ruby
 			 my-exec-path-from-shell
-			 my-ack
+			 my-ag
 			 my-deft
 			 my-direx
 			 my-projectile

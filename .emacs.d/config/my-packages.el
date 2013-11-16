@@ -21,14 +21,14 @@
 			  ruby-block
 			  highlight-symbol
 			  exec-path-from-shell
-			  ack-and-a-half
 			  deft
 			  color-theme
 			  direx
 			  projectile
 			  flx-ido
 			  flycheck
-                          yaml-mode)
+                          yaml-mode
+			  ag)
   "Default packages")
 
 ;; Install default packages
