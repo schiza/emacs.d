@@ -28,6 +28,7 @@
 			  flx-ido
 			  flycheck
                           yaml-mode
+			  rainbow-mode
 			  ag)
   "Default packages")
 
