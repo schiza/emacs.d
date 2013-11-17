@@ -243,4 +243,15 @@ Don't mess with special buffers."
           (rename-file filename new-name t)
           (set-visited-file-name new-name t t)))))))
 
+;; Highlight comment annotations
+(defun font-lock-comment-annotations ()
+  "Highlight a bunch of well known comment annotations.
+
+This functions should be added to the hooks of major modes for programming."
+  (font-lock-add-keywords
+   nil '(("\\<\\(FIX\\(ME\\)?\\|TODO\\|OPTIMIZE\\|HACK\\|REFACTOR\\):"
+          1 font-lock-warning-face t))))
+
+(add-hook 'prog-mode-hook 'font-lock-comment-annotations)
+
 (provide 'my-global)
