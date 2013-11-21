@@ -5,8 +5,12 @@
 ;; Always confirm exit
 (setq confirm-kill-emacs 'yes-or-no-p)
 
-;; Remove trailing whitespace on save
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;; Remove trailing whitespace on save (only in prog-modes)
+(add-hook 'before-save-hook 'my-prog-nuke-trailing-whitespace)
+
+(defun my-prog-nuke-trailing-whitespace ()
+  (when (derived-mode-p 'prog-mode)
+    (delete-trailing-whitespace)))
 
 ;; Remove tool-bar and menu-bar
 (tool-bar-mode -1)
