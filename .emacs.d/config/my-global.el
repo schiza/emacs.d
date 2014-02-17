@@ -35,8 +35,10 @@
 (when (not indicate-empty-lines)
   (toggle-indicate-empty-lines))
 
-;; Always end a file with a newline
-(setq require-final-newline t)
+;; Always end a file with a newline, but only in prog-mode
+(setq require-final-newline nil)
+(setq mode-require-final-newline nil)
+(add-hook 'prog-mode-hook (lambda () (setq mode-require-final-newline)))
 
 ;; Don't automatically add new lines when scrolling down at the bottom
 ;; of a buffer
