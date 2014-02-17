@@ -24,7 +24,7 @@
 (global-hl-line-mode 1)
 (if window-system
 	(set-face-background 'hl-line "gray15")
-	(set-face-background 'hl-line "red")
+	(set-face-background 'hl-line "gray20")
 )
 
 ;; Color-theme
@@ -57,8 +57,14 @@
      ))
 )
 
-(if window-system
-	(faces_x)
-	(color-theme-midnight))
+(defun faces_terminal ()
+  (interactive)
+  (color-theme-initialize)
+  (color-theme-midnight)
+)
+
+(if (window-system)
+      (faces_x)
+      (faces_terminal))
 
 (provide 'my-theme)

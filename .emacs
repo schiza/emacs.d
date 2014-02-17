@@ -39,7 +39,8 @@
   (require config))
 
 ;; Start Emacs server automatically
-(server-start)
+(if (window-system)
+    (server-start))
 
 ;; Split window and open Deft buffer in it
 (split-window-horizontally)
