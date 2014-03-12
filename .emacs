@@ -33,7 +33,8 @@
 			 my-deft
 			 my-direx
 			 my-projectile
-			 my-flycheck))
+			 my-flycheck
+			 my-whitespace))
 
 (dolist (config schiza/configs)
   (require config))
