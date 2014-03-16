@@ -6,9 +6,6 @@
     (tab-mark 9 [187 9] [92 9])
     ))
 
-(add-hook 'after-init-hook
-
-
 (defun my-whitespace-mode ()
   (interactive)
   (set-face-attribute 'whitespace-line nil
@@ -18,8 +15,6 @@
   (set-face-attribute 'whitespace-tab nil
 		      :background nil :foreground "gray30")
   (whitespace-mode))
-
-)
 
 (add-hook 'prog-mode-hook 'my-whitespace-mode)
 
