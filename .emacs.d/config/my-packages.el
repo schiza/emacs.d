@@ -29,7 +29,8 @@
 			  flycheck
                           yaml-mode
 			  rainbow-mode
-			  ag)
+			  ag
+			  auto-dim-other-buffers)
   "Default packages")
 
 ;; Install default packages

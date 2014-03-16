@@ -34,7 +34,8 @@
 			 my-direx
 			 my-projectile
 			 my-flycheck
-			 my-whitespace))
+			 my-whitespace
+			 my-auto-dim-other-buffers))
 
 (dolist (config schiza/configs)
   (require config))
