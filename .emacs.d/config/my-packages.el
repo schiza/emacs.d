@@ -47,7 +47,8 @@
       (package-install pkg))))
 
 ;; Require packages that needs that and doesn't have separate config
-(defvar schiza/manual-require-packages '(handlebars-mode)
+(defvar schiza/manual-require-packages '(handlebars-mode
+					 multi-scratch)
   "Packages requiring manual require")
 
 (dolist (pkg schiza/manual-require-packages)
