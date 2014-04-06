@@ -30,7 +30,8 @@
                           yaml-mode
 			  rainbow-mode
 			  ag
-			  auto-dim-other-buffers)
+			  auto-dim-other-buffers
+			  github-browse-file)
   "Default packages")
 
 ;; Install default packages

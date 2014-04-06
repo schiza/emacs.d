@@ -35,7 +35,8 @@
 			 my-projectile
 			 my-flycheck
 			 my-whitespace
-			 my-auto-dim-other-buffers))
+			 my-auto-dim-other-buffers
+			 my-github-browse-file))
 
 (dolist (config schiza/configs)
   (require config))
