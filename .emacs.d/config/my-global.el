@@ -297,4 +297,12 @@ point reaches the beginning or end of the buffer, stop there."
                 'smarter-move-beginning-of-line)
 
 
+;; Multi-scratch new with prefix
+(defun multi-scratch-new-text  ()
+  (interactive)
+  (let ((current-prefix-arg t))
+    (multi-scratch-new)))
+
+(global-set-key (kbd "C-x n") 'multi-scratch-new-text)
+
 (provide 'my-global)
