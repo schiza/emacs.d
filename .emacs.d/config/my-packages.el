@@ -31,7 +31,8 @@
 			  rainbow-mode
 			  ag
 			  auto-dim-other-buffers
-			  github-browse-file)
+			  github-browse-file
+			  powerline)
   "Default packages")
 
 ;; Install default packages

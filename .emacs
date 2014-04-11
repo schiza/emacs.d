@@ -36,7 +36,8 @@
 			 my-flycheck
 			 my-whitespace
 			 my-auto-dim-other-buffers
-			 my-github-browse-file))
+			 my-github-browse-file
+			 my-powerline))
 
 (dolist (config schiza/configs)
   (require config))
