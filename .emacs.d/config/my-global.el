@@ -202,6 +202,15 @@
 (global-set-key [\M-up] 'move-text-up)
 (global-set-key [\M-down] 'move-text-down)
 
+;; Automatically highlight symbol on point
+(require 'highlight-symbol)
+(setq hihlight-symbol-idle-delay 0.5)
+(add-hook 'prog-mode-hook (lambda () (highlight-symbol-mode)))
+
+;; Search forward and backward for highlighted symbol
+(global-set-key (kbd "C-2") 'highlight-symbol-prev)
+(global-set-key (kbd "C-3") 'highlight-symbol-next)
+
 ;; Use buffer-menu instead of list-buffers for  C-x C-b
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
