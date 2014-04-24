@@ -37,7 +37,8 @@
 			 my-whitespace
 			 my-auto-dim-other-buffers
 			 my-github-browse-file
-			 my-powerline))
+			 my-powerline
+			 my-highlight-symbol))
 
 (dolist (config schiza/configs)
   (require config))
