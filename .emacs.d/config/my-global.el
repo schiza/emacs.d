@@ -204,7 +204,7 @@
 
 ;; Automatically highlight symbol on point
 (require 'highlight-symbol)
-(setq hihlight-symbol-idle-delay 0.5)
+(setq highlight-symbol-idle-delay 0.5)
 (add-hook 'prog-mode-hook (lambda () (highlight-symbol-mode)))
 
 ;; Search forward and backward for highlighted symbol
