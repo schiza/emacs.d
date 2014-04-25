@@ -47,6 +47,11 @@
 (if (window-system)
     (server-start))
 
+;;; Some autostart thingies
+
+;; Set text-mode for scratch
+(text-mode)
+
 ;; Split window and open Deft buffer in it
 (split-window-horizontally)
 (windmove-right)
