@@ -333,8 +333,7 @@ point reaches the beginning or end of the buffer, stop there."
      ((and buffer-file-name (buffer-modified-p))
       ;; If there's a file associated with the buffer,
       ;; make sure it's saved
-      (y-or-n-p (format "Buffer %s modified; kill anyway? "
-                    (buffer-name))))
+      t)
      ((get-buffer-process buffer)
       ;; If there's a process associated with the buffer,
       ;; make sure it's dead
