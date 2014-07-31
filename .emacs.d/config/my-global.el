@@ -323,4 +323,28 @@ point reaches the beginning or end of the buffer, stop there."
 
 (global-set-key (kbd "C-M-x") 'mark-current-word)
 
+;; Prevent from accidental buffer killing
+(defun ask-before-killing-buffer ()
+  (let ((buffer (current-buffer)))
+    (cond
+     ((equal (buffer-name) "*scratch*")
+      ;; Never kill *scratch*
+      nil)
+     ((and buffer-file-name (buffer-modified-p))
+      ;; If there's a file associated with the buffer,
+      ;; make sure it's saved
+      (y-or-n-p (format "Buffer %s modified; kill anyway? "
+                    (buffer-name))))
+     ((get-buffer-process buffer)
+      ;; If there's a process associated with the buffer,
+      ;; make sure it's dead
+      (y-or-n-p (format "Process %s active; kill anyway? "
+                    (process-name (get-buffer-process buffer)))))
+     ((string-match "*multi-scratch" (buffer-name))
+        (y-or-n-p (format "Do you really want to kill %s? " (buffer-name))))
+     (t t))))
+
+(add-to-list 'kill-buffer-query-functions
+             'ask-before-killing-buffer)
+
 (provide 'my-global)

@@ -38,8 +38,7 @@
 			 my-auto-dim-other-buffers
 			 my-github-browse-file
 			 my-powerline
-			 my-highlight-symbol
-			 my-keep-buffers))
+			 my-highlight-symbol))
 
 (dolist (config schiza/configs)
   (require config))
