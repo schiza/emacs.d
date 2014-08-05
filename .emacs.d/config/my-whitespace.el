@@ -8,8 +8,7 @@
 
 (defun my-whitespace-mode ()
   (interactive)
-  (set-face-attribute 'whitespace-line nil
-		      :background nil :foreground "red")
+  (setq whitespace-style '(face tabs spaces trailing space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark))
   (set-face-attribute 'whitespace-space nil
 		      :background nil :foreground "gray30")
   (set-face-attribute 'whitespace-tab nil
