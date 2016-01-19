@@ -48,12 +48,14 @@
 (setq tab-width 2
       indent-tabs-mode nil)
 
-;; Turn off backups
-(setq make-backup-files nil)
+;; Turn autosave on
+(auto-save-mode t)
 
-;; Disable temporary files
-(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+;; Store temporary files in tmp
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 ;; Boolean shorthands
 (defalias 'yes-or-no-p 'y-or-n-p)
