@@ -52,8 +52,9 @@
 ;; Set text-mode for scratch
 (text-mode)
 
-;; Split window and open Deft buffer in it
+;; Split window and open Deft buffer in it and after that, open TODO on top of it
 (split-window-horizontally)
 (windmove-right)
 (deft)
+(find-file (concat (file-name-as-directory deft-directory) "TODO.org"))
 (windmove-left)
