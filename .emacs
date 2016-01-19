@@ -56,5 +56,6 @@
 (split-window-horizontally)
 (windmove-right)
 (deft)
+(split-window-vertically)
 (find-file (concat (file-name-as-directory deft-directory) "TODO.org"))
 (windmove-left)
