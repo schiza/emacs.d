@@ -81,6 +81,9 @@
   (invert-face 'mode-line)
   (run-with-timer 0.1 nil 'invert-face 'mode-line)))
 
+;; Wrap lines in org-mode
+(setq org-startup-truncated nil)
+
 ;; Show line and column number
 (setq line-number-mode t)
 (setq column-number-mode t)
