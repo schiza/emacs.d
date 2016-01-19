@@ -75,6 +75,12 @@
       visible-bell t)
 (show-paren-mode t)
 
+;; HOTFIX: visible bell not working properly on OS X El Capitan
+(setq visible-bell nil)
+(setq ring-bell-function (lambda ()
+  (invert-face 'mode-line)
+  (run-with-timer 0.1 nil 'invert-face 'mode-line)))
+
 ;; Show line and column number
 (setq line-number-mode t)
 (setq column-number-mode t)
