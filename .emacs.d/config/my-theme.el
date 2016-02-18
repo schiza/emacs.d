@@ -1,6 +1,7 @@
 ;; Use color delimiters
 (require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
 (custom-set-faces
  '(rainbow-delimiters-depth-1-face ((t (:foreground "#46ff00"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#1e9800"))))
