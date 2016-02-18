@@ -351,6 +351,9 @@ point reaches the beginning or end of the buffer, stop there."
       (y-or-n-p (format "Process %s active; kill anyway? "
                     (process-name (get-buffer-process buffer)))))
      ((string-match "*multi-scratch" (buffer-name))
+      ;; ask before killing multi scratches
+      ;; but either way, save the contents to some autosave folder
+        (write-region nil nil (format "~/.multi-scratch-autosave/%s-%f" (buffer-name) (float-time)) 0)
         (y-or-n-p (format "Do you really want to kill %s? " (buffer-name))))
      (t t))))
 
