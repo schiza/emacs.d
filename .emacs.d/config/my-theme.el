@@ -68,4 +68,9 @@
       (faces_x)
       (faces_terminal))
 
+;; Org mode priorities colors
+(setq org-priority-faces '((?A . (:foreground "red" :weight 'bold))
+                           (?B . (:foreground "yellow"))
+                           (?C . (:foreground "green"))))
+
 (provide 'my-theme)
